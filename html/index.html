@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" type="image/x-icon" href="../assests/favicon .ico">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://kit.fontawesome.com/76cb337445.js" crossorigin="anonymous"></script>
+    <title>Project Eya</title>
+</head>
+<body>
+    <i class="fa-solid fa-bars"></i>
+    
+    <nav class="navbar">
+                
+        <ul>
+            
+            <li class="home"><a href="index.html">Home</a></li>
+            <div class="html">  <img src="../assests/html.png"/>
+                <li><a href="htlm.html">HTML</a></li></div>
+            <div class="css">   <img src="../assests/css.png"/>
+                <li><a href="css.html">CSS</a></li></div>
+            <div class="js">      <img src="../assests/JS.png"/>
+                <li><a href="js.html">JAVASCRIPT</a></li></div>
+        </ul>
+        
+
+    </nav>
+    <script>
+        const items = document.querySelectorAll("ul li");
+        items.forEach(item => {
+            item.addEventListener("click",() =>
+            { document.querySelector("li.active").classList.remove("active");
+            item.classList.add("active");
+        });
+        });
+    </script>
+    <section class="header">
+        <div class="header_content">
+            <h1>Bokri Eya Project</h1>
+        <p>Welcome to my website !
+            <br>I'm a software engineering student at Higher Institute of Applied Science and Technology of Sousse, Tunisia.
+           <br> Explore my site, Maybe it will allow you to discover your passion in web development.
+          </p>
+        </div>
+        <div class="header_img"><img src="../assests/DSC_5148.JPG" id="home_img"/></div>
+
+    </section>
+    <section class="contact">
+        <div class="map_img"><img src="../assests/back.jpg" id="map_img"/></div>
+        <div class="contact_content">
+            <h1>Contact :</h1>
+        <p>Address: Rue Tahar Ben Achour, Sousse 4003</p>
+            <p><a href="#"> info@BokriEya.com</a></p>
+                <p> 53 618 398 - 72 148 655</p>
+        </div>
+            
+            
+    </section>
+    <div class="contact-bar">
+        <ul>
+            <li>Follow us on :</li>
+        
+                <li><a href="https://www.facebook.com/eya.bokri/"><img src="../assests/fc.png" id="facebook"/></a></li>
+                <li><a href="https://www.instagram.com/eyabokri/"><img src="../assests/ins.png" id="instagram"/></a></li>
+                <li><a href="https://www.linkedin.com/in/eya-bokri-9492b1210/"><img src="../assests/link.png" id="linkedin"/></a></li>
+            
+            
+    </ul>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><h3>Contact Us:  bokrieya@gmail.com</h3></a>
+    </div>
+    <footer>
+        <div class="footer_content">
+            
+        <h4>© 2022 par EB Project, All Rights Reserved</h4>
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
